@@ -158,7 +158,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	display: table;
 	width: 100%;
 	padding: 0;
-	background: url(../img/intro-bg.jpg) top center no-repeat;
+	/* background: url(../img/intro-bg.jpg) top center no-repeat; */
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -535,4 +535,20 @@ color: #777;
 }
 #footer a:hover {
 	color: #ccc;
+}
+
+/* slideshow */
+[data-slides] {
+	background-image: url(../img/intro-bg.jpg) top center no-repeat;; /* Default image. */
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: cover;
+	transition: background-image 1s linear;
+}
+
+/* Use additional CSS to control the `height` of `[data-slides]`, like so: */
+
+.test { height: 220px; }
+@media all and (min-width: 48em) {
+	.test { height: 320px; }
 }
